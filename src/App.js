@@ -10,9 +10,10 @@ import "./app.scss"
 
 function App() {
   const [menuOpens,setMenuOpens] = useState(false);
+  const [leftBar,setLeftBar] = useState(false);
   return (
     <div className="app"> 
-      <Navbar menuOpens={menuOpens} setMenuOpens={setMenuOpens}></Navbar>
+      <Navbar menuOpens={menuOpens} setMenuOpens={setMenuOpens} leftBar={leftBar} setLeftBar={setLeftBar}></Navbar>
       <Menu menuOpens={menuOpens} setMenuOpens={setMenuOpens}></Menu>
       <div className="sections">
         <Intro></Intro>
