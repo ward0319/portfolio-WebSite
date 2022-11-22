@@ -13,7 +13,7 @@ export default function Menu({menuOpens,setMenuOpens}) {
             </li>
             <li onClick={onClickEvent}>
                 <a href='#portfolio'>Portfolio</a>
-            </li >
+            </li>
             <li onClick={onClickEvent}>
                 <a href='#works'>Works</a>
             </li>

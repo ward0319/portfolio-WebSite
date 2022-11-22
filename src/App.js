@@ -8,7 +8,7 @@ import Menu from "./components/menu/Menu";
 import React, { useState } from 'react'
 import "./app.scss"
 
-function App() {
+const App = () => {
   const [menuOpens,setMenuOpens] = useState(false);
   const [leftBar,setLeftBar] = useState(false);
   return (
