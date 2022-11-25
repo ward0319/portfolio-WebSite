@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import './navbar.scss';
 import Logo from "../../assets/H&H-logo.png"
-import { FaGithub , FaVimeo, FaNeos ,FaAngleLeft , FaAngleRight} from 'react-icons/fa';
+import { FaGithub , FaVimeo, FaGoogle } from 'react-icons/fa';
 
-function Navbar({menuOpens,setMenuOpens,leftBar,setLeftBar}){
-    const onClick=()=>{
+function Navbar({menuOpens,setMenuOpens}){
+    const onClick = () => {
         setMenuOpens(!menuOpens);
     }
-    // const onClick2=()=>{
-    //     setLeftBar(!leftBar);
-    // }
+    const clipBoard = () => {
+        navigator.clipboard.writeText("sddsk1123@gmail.com")
+        alert("Mail address Clipboard !")
+    }
     return(
         <>
             <div className={"navbar "+ (menuOpens && "active")}>
@@ -22,7 +23,6 @@ function Navbar({menuOpens,setMenuOpens,leftBar,setLeftBar}){
                             <span className="line1"></span>
                             <span className="line2"></span>
                             <span className="line3"></span>
-                            
                         </div>
                     </div>
                 </div>
@@ -31,7 +31,7 @@ function Navbar({menuOpens,setMenuOpens,leftBar,setLeftBar}){
                 <div className="wrap">
                     <a target="_blank" rel="noreferrer" href="https://github.com/hyunwung" className='logos'>{<FaGithub></FaGithub>}</a>
                     <a target="_blank" rel="noreferrer" href="https://velog.io/@sddsk" className='logos'>{<FaVimeo></FaVimeo>}</a>
-                    <a target="_blank" rel="noreferrer" href="https://www.notion.so/hanghae99-8th-team2/07589143aa424693b4c4d6df84b5e9a8" className='logos'>{<FaNeos></FaNeos>}</a>
+                    <a rel="noreferrer" onClick={()=>clipBoard()} className='logos'>{<FaGoogle></FaGoogle>}</a>
                 </div>
             </div>
         </>

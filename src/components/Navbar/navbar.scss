@@ -25,7 +25,7 @@
             }
             .logoImage{
                 margin-left: 5px;
-                width: 45px;
+                
                 height: 35px;
             }
             .itemContainer{
@@ -40,14 +40,12 @@
         }
         .right{
             .hamburger{
-                
                 width: 32px;
                 height: 25px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 cursor: pointer;
-
                 span{
                     border-radius: 8px;
                     width: 100%;
@@ -91,12 +89,13 @@
         position: absolute;
         top: 39%;
         width: 100%;
-        a{
+        .logos{
             font-size: 25px;
             display: block;
             line-height:90px;
             text-decoration: none;
-            color: #4d4d4e;   
+            color: #4d4d4e;
+            cursor: pointer;
         }
         .short{
             border: none;

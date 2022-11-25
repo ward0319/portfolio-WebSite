@@ -1,9 +1,8 @@
 import Navbar from "./components/Navbar/Navbar";
 import Intro from "./components/intro/Intro";
 import Portfolio from "./components/portfolio/Portfolio";
-import Testimonials from "./components/testimonials/Testimonials";
-import Works from "./components/work/Works"
-import Contact from "./components/contact/Contact"
+import Skills from "./components/skills/Skills";
+import About from "./components/about/About"
 import Menu from "./components/menu/Menu";
 import React, { useState } from 'react'
 import "./app.scss"
@@ -17,10 +16,9 @@ const App = () => {
       <Menu menuOpens={menuOpens} setMenuOpens={setMenuOpens}></Menu>
       <div className="sections">
         <Intro></Intro>
+        <About></About>
+        <Skills></Skills>
         <Portfolio></Portfolio>
-        <Works></Works>
-        <Testimonials></Testimonials>
-        <Contact></Contact>
       </div>
     </div>
   );
