@@ -1,21 +1,47 @@
 .about{
-    background-color: lightgreen;
+    background-color: #00cec9;
     display: flex;
     flex-direction: column;
     .about-title{
-        margin: 90px auto;
+        margin: 105px auto;
         .about-title{
-            font-size: 50px;
+            font-size: 60px;
         }
     }
     .about-container{
         display: flex;
         justify-content: center;
         .about-profile{
-            height: 350px;
+            margin-right: 80px;
+            height: 300px;
         }
-        .about-right{
-            margin-left: 60px;
+        .about-center{
+            .center-container{
+                display: flex;
+                flex-wrap: wrap;
+                gap:40px;
+                margin: 0 auto;
+                max-width: 400px;
+                padding-top: 20px;
+                .center-container-items{
+                    flex: 1 1 40%;
+                    margin: 0 auto;
+                    .items-content{
+                        p{
+                            font-size: 25px;
+                            font-weight: 600;
+                            margin-bottom: 10px;
+                            margin-top: 2px;
+                        }
+                    }
+                }
+            }
+        }
+        .right-about{
+            margin-left: 30px;
+            padding-top: 20px;
+            font-size: 22px;
+            font-weight: 500;
         }
     }
 }

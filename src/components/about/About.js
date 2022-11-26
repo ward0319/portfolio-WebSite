@@ -11,9 +11,43 @@ export default function About() {
       </div>
       <div className='about-container'>
         <img src={profile} className="about-profile"></img>
-        <div>
-          <div className='about-right'>알빠노 ?</div>
-        </div>
+          <div className='about-center'>
+            <div className='center-container'>
+              <div className='center-container-items'>
+                <div className='items-content'>
+                  <p>이름</p>
+                  <p>서현웅</p>
+                </div>
+              </div>
+              <div className='center-container-items'>
+                <div className='items-content'>
+                  <p>생년월일</p>
+                  <p>98.03.19</p>
+                </div>
+              </div>
+              <div className='center-container-items'>
+                <div className='items-content'>
+                  <p>주소지</p>
+                  <p>경기도 하남시</p>
+                </div>
+              </div>
+              <div className='center-container-items'>
+                <div className='items-content'>
+                  <p>전화번호</p>
+                  <p>010-4913-3152</p>
+                </div>
+              </div>
+            </div>
+            <a className='download-link' href='aws.png' download="aws.png">
+              <button>Resume</button>
+            </a>
+          </div>
+          <div className='right-about'>
+            <p>모르는것이 있으면 알때까지</p>
+            <p className='right-mg'>항상 노력하는 합니다 !</p>
+            <p className='right-mg'>만족하지 않고 계속 발전하고자 합니다 !</p>
+            <p className='right-mg'>협업하기 좋은 소통능력을 갖고 있습니다 !</p>
+          </div>
       </div>
     </div>
   )
