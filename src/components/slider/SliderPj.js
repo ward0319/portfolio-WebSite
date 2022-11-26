@@ -1,5 +1,4 @@
 import React,{useState}from 'react'
-import withTopia from "../../assets/withtopia.jpg"
 import {FaArrowAltCircleRight,FaArrowAltCircleLeft} from "react-icons/fa"
 import {SliderData} from "./SliderData";
 import "./Slider.scss"
@@ -27,12 +26,12 @@ const SliderPj = ({slides}) => {
       {SliderData.map((slide,index)=>{
         return(
           <div className={index === current ? "slide active" : "slide"} key={index}>
-              {index === current && (
-                <img src={process.env.PUBLIC_URL+slide.image} alt = 'image' className="images2" onClick={()=>clickLink(index)}></img>
-              )}
+            {index === current && (
+              <img src={process.env.PUBLIC_URL+slide.image} alt = 'image' className="images2" onClick={()=>clickLink(index)}></img>
+            )}
           </div>
-          )
-      })}
+        )}
+      )}
     </section>
   )
 }
