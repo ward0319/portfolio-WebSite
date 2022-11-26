@@ -3,19 +3,40 @@
     display: flex;
     flex-direction: column;
     .skills-title{
-        margin: 60px auto;
+        margin: 75px auto;
         font-size: 60px;
     }
     .skills-container{
         margin: 0 auto;
+        display: flex;
         .skills-back{
-            display: flex;
+            margin-left: 70px;
             border-radius: 20px;
-            min-width: 1200px;
-            height: 62vh;
+            min-width: 200px;
+            min-height: 200px;
             background-color: aliceblue;
-            img{
-                height: 150px;
+            .skills-icons{
+                display: block;
+                margin: 10px auto;
+                height: 180px;
+                object-fit: cover;
+            }
+        }
+    }
+    .skills-container2{
+        margin: 70px auto;
+        display: flex;
+        .skills-back{
+            margin-left: 60px;
+            border-radius: 20px;
+            min-width: 200px;
+            min-height: 200px;
+            background-color: aliceblue;
+            .skills-icons{
+                display: block;
+                margin: 10px auto;
+                height: 180px;
+                object-fit: cover;
             }
         }
     }

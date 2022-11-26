@@ -1,3 +1,21 @@
 .portfolio{
     background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .portfolio-title{
+        margin: 75px auto;
+        font-size: 60px;
+    }
+    .portfolio-container{
+        
+        // .portfolio-cards{
+        //     margin: 10px;
+        //     display: flex;
+        //     .cards-items{
+        //         width: 350px;
+        //         margin-left: 60px;
+        //     }
+        // }
+    }
 }
