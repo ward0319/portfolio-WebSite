@@ -1,7 +1,10 @@
 import React from 'react'
 import "./About.scss"
-import { AiOutlinePaperClip } from "react-icons/ai";
+import { AiOutlinePaperClip , AiOutlineCheck } from "react-icons/ai";
 import profile from "../../assets/profile.jpg"
+import { BsDownload } from "react-icons/bs";
+import { FaCheck } from "react-icons/fa";
+
 
 export default function About() {
   return (
@@ -39,14 +42,14 @@ export default function About() {
               </div>
             </div>
             <a className='download-link' href='aws.png' download="aws.png">
-              <button>Resume</button>
+              <button className='download-btn'>Resume <BsDownload></BsDownload></button>
             </a>
           </div>
           <div className='right-about'>
-            <p>모르는것이 있으면 알때까지</p>
+            <p><FaCheck></FaCheck>모르는것이 있으면 알때까지</p>
             <p className='right-mg'>항상 노력하는 합니다 !</p>
-            <p className='right-mg'>만족하지 않고 계속 발전하고자 합니다 !</p>
-            <p className='right-mg'>협업하기 좋은 소통능력을 갖고 있습니다 !</p>
+            <p className='right-mg'><FaCheck></FaCheck>만족하지 않고 계속 발전하고자 합니다 !</p>
+            <p className='right-mg'><FaCheck></FaCheck>협업하기 좋은 소통능력을 갖고 있습니다 !</p>
           </div>
       </div>
     </div>

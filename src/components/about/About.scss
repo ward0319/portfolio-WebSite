@@ -36,7 +36,19 @@
                     }
                 }
             }
+        }   
+        .download-btn{
+            margin-top: 8px;
+            border-radius: 12px;
+            border: none;
+            width: 140px;
+            height: 45px;
+            font-size: 21px;
+            color : white;
+            background-color: #6768ab;
+            cursor: pointer;
         }
+        
         .right-about{
             margin-left: 30px;
             padding-top: 20px;
