@@ -4,7 +4,9 @@ import {SliderData} from "./SliderData";
 import "./Slider.scss"
 
 const SliderPj = ({slides}) => {
+  
   const [current,setCurrent] = useState(0)
+  const [content,setContent] = useState("") 
   const lengths = slides.length
 
   const nextButton = () => {
@@ -15,9 +17,14 @@ const SliderPj = ({slides}) => {
   }
   const clickLink = (index) => {
     if(index === 1){
-      alert("ㅇㅇ")
-      return
+      
     }
+  }
+  const descAdd = (id) => {
+    console.log(id)
+  }
+  const removeMouse = () => {
+    setContent("")
   }
   return (
     <section className="gallery">
@@ -25,10 +32,10 @@ const SliderPj = ({slides}) => {
       <FaArrowAltCircleRight className="right-arrow" onClick={nextButton}></FaArrowAltCircleRight>
       {SliderData.map((slide,index)=>{
         return(
-          <div className={index === current ? "slide active" : "slide"} key={index}>
-            {index === current && (
-              <img src={process.env.PUBLIC_URL+slide.image} alt = 'image' className="images2" onClick={()=>clickLink(index)}></img>
-            )}
+          <div className={index === current ? "slide active" : "slide"} key={index} onMouseEnter={()=>descAdd(index)} onMouseLeave={()=>removeMouse()}>
+              {index === current && (
+                  <img src={process.env.PUBLIC_URL+slide.image} alt = 'image' className="images" onClick={()=>clickLink(index)}></img>
+              )}
           </div>
         )}
       )}

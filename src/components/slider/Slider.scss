@@ -1,7 +1,7 @@
 
 .gallery{
     position: relative;
-    height: 63vh;
+    height: 62vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,10 +35,23 @@
         transition-duration: 1s;
         transform: scale(1.08);
     }
-    .images2{
-        height: 550px;
-        border-radius: 10px;
+    .desc{
+        opacity: 0.85;
+        background-color: gray;
+        height: 554px;
+        width: 780px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 20;
     }
     
+    .images{
+        height: 550px;
+        width: 780px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
 }
 

@@ -12,19 +12,22 @@
         .skills-back{
             margin-left: 70px;
             border-radius: 20px;
-            min-width: 200px;
-            min-height: 200px;
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
             background-color: aliceblue;
             .skills-icons{
                 display: block;
                 margin: 10px auto;
                 height: 180px;
-                object-fit: cover;
             }
-            // &:hover{
-            //     min-width: 240px;
-            //     min-height: 240px;
-            // }
+        }
+        .hover{
+            width: 240px;
+            height: 240px;
+            .skills-icons{
+                height: 210px;
+            }
         }
     }
     .skills-container2{
@@ -33,14 +36,22 @@
         .skills-back{
             margin-left: 60px;
             border-radius: 20px;
-            min-width: 200px;
-            min-height: 200px;
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
             background-color: aliceblue;
             .skills-icons{
                 display: block;
                 margin: 10px auto;
                 height: 180px;
-                object-fit: cover;
+                // object-fit: cover;
+            }
+        }
+        .hover{
+            width: 240px;
+            height: 240px;
+            .skills-icons{
+                height: 210px;
             }
         }
     }

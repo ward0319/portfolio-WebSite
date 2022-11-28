@@ -11,11 +11,6 @@ export default function Portfolio() {
       </div>
       <div className="portfolio-container">
         <SliderPj slides={SliderData}></SliderPj>
-        {/* <div className="portfolio-cards">
-          <img src={withTopia} className="cards-items"></img>
-          <img src={withTopia} className="cards-items"></img>
-          <img src={withTopia} className="cards-items"></img>
-        </div>   */}
       </div>
     </div>
   )

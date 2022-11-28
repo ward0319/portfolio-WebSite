@@ -35,7 +35,7 @@ export default function Skills() {
       <div className="skills-container">
       {iconData.map((data,index)=>{
         return(
-          <div className={"skills-back" + (hover === index ? " hover" : "")} onMouseEnter={()=>hoverEvent(index)} onMouseLeave={()=>unHoverEvent()}>
+          <div key={index} className={"skills-back" + (hover === index ? " hover" : "")} onMouseEnter={()=>hoverEvent(index)} onMouseLeave={()=>unHoverEvent()}>
             <img src={process.env.PUBLIC_URL+data.icons} className="skills-icons"></img>
           </div>
         )
