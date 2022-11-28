@@ -46,10 +46,9 @@ export default function About() {
             </a>
           </div>
           <div className='right-about'>
-            <p><FaCheck></FaCheck>모르는것이 있으면 알때까지</p>
-            <p className='right-mg'>항상 노력하는 합니다 !</p>
-            <p className='right-mg'><FaCheck></FaCheck>만족하지 않고 계속 발전하고자 합니다 !</p>
-            <p className='right-mg'><FaCheck></FaCheck>협업하기 좋은 소통능력을 갖고 있습니다 !</p>
+            <p className='right-mg'><FaCheck></FaCheck> 모르는 것이 있으면 알때까지 항상 노력하는 합니다 !</p>
+            <p className='right-mg'><FaCheck></FaCheck> 만족하지 않고 계속 발전하고자 합니다 !</p>
+            <p className='right-mg'><FaCheck></FaCheck> 협업하기 좋은 소통능력을 갖고 있습니다 !</p>
           </div>
       </div>
     </div>

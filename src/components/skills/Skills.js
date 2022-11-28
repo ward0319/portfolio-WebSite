@@ -1,44 +1,51 @@
 import "./Skills.scss";
 import { AiOutlinePaperClip } from "react-icons/ai";
-import reactIcon from "../../assets/react.png"
-import htmlIcon from "../../assets/html.png"
-import cssIcon from "../../assets/css.png"
-import jsIcon from "../../assets/javascript.png"
-import pythonIcon from "../../assets/python.png"
 import awsIcon from  "../../assets/aws.png"
 import sassIcon from  "../../assets/sass.png"
+import { useState } from "react";
 
 export default function Skills() {
-  const clickEvent = () => {
-
+  const [hover,setHover] = useState()
+  const hoverEvent = (id) => {
+    setHover(id)
   }
+  const unHoverEvent = () => {
+    setHover()
+  }
+  const iconData = [{
+    icons:"/icons/html.png"
+  },
+  {
+    icons:"/icons/css.png"
+  },
+  {
+    icons:"/icons/javascript.png"
+  },
+  {
+    icons:"/icons/react.png"
+  },
+  {
+    icons:"/icons/python.png"
+  }]
   return (
     <div className='skills' id="skills">
       <div className="skills-title">
         <AiOutlinePaperClip style={{fontSize:"42px"}}></AiOutlinePaperClip><span>Skills</span>
       </div>
       <div className="skills-container">
-        <div className="skills-back">
-          <img src={htmlIcon} className="skills-icons" onClick={clickEvent}></img>
-        </div>
-        <div className="skills-back">
-          <img src={cssIcon} className="skills-icons"></img>
-        </div>
-        <div className="skills-back">
-          <img src={jsIcon} className="skills-icons"></img>
-        </div>
-        <div className="skills-back">
-          <img src={reactIcon} className="skills-icons"></img>
-        </div>
-        <div className="skills-back">
-          <img src={pythonIcon} className="skills-icons"></img>
-        </div>
+      {iconData.map((data,index)=>{
+        return(
+          <div className={"skills-back" + (hover === index ? " hover" : "")} onMouseEnter={()=>hoverEvent(index)} onMouseLeave={()=>unHoverEvent()}>
+            <img src={process.env.PUBLIC_URL+data.icons} className="skills-icons"></img>
+          </div>
+        )
+      })}
       </div>
       <div className="skills-container2">
-        <div className="skills-back">
-          <img src={awsIcon} className="skills-icons" onClick={clickEvent}></img>
+        <div className={"skills-back" + (hover === 6 ? " hover" : "")} onMouseEnter={()=>hoverEvent(6)} onMouseLeave={()=>unHoverEvent()}>
+          <img src={awsIcon} className="skills-icons"></img>
         </div>
-        <div className="skills-back">
+        <div className={"skills-back" + (hover === 7 ? " hover" : "")} onMouseEnter={()=>hoverEvent(7)} onMouseLeave={()=>unHoverEvent()}>
           <img src={sassIcon} className="skills-icons"></img>
         </div>
       </div>

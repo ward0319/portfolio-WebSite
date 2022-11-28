@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     .skills-title{
-        margin: 75px auto;
+        margin: 85px auto;
         font-size: 60px;
     }
     .skills-container{
@@ -21,6 +21,10 @@
                 height: 180px;
                 object-fit: cover;
             }
+            // &:hover{
+            //     min-width: 240px;
+            //     min-height: 240px;
+            // }
         }
     }
     .skills-container2{
