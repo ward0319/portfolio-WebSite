@@ -3,6 +3,7 @@ import SliderPj from "../slider/SliderPj";
 import { AiOutlinePaperClip } from "react-icons/ai";
 import { SliderData } from "../slider/SliderData";
 import { ImFilePicture } from "react-icons/im";
+import exapndLogo from "../../assets/up.png";
 
 export default function Portfolio() {
   return (
@@ -13,6 +14,9 @@ export default function Portfolio() {
       <div className="portfolio-container">
         <SliderPj slides={SliderData}></SliderPj>
       </div>
+      <a href='#intro' className='bottom-btn3'>
+        <img src={exapndLogo} alt="logo stuff"></img>
+      </a>
     </div>
   )
 }

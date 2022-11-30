@@ -3,19 +3,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     .portfolio-title{
         margin: 65px auto;
         font-size: 60px;
     }
-    .portfolio-container{
-        
-        // .portfolio-cards{
-        //     margin: 10px;
-        //     display: flex;
-        //     .cards-items{
-        //         width: 350px;
-        //         margin-left: 60px;
-        //     }
-        // }
+    .bottom-btn3{
+        position: absolute;
+        left: 49%;
+        bottom: 10px;
+        img{
+            width: 30px;
+            animation: arrowBlink 2s infinite;
+        }
+        @keyframes arrowBlink {
+            100%{
+                opacity: 0;
+            }
+        }
     }
 }

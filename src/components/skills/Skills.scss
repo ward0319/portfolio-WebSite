@@ -2,8 +2,9 @@
     background-color: lightcoral;
     display: flex;
     flex-direction: column;
+    position: relative;
     .skills-title{
-        margin: 85px auto;
+        margin: 70px auto;
         font-size: 60px;
     }
     .skills-container{
@@ -52,6 +53,20 @@
             height: 240px;
             .skills-icons{
                 height: 210px;
+            }
+        }
+    }
+    .bottom-btn3{
+        position: absolute;
+        left: 49%;
+        bottom: 10px;
+        img{
+            width: 30px;
+            animation: arrowBlink 2s infinite;
+        }
+        @keyframes arrowBlink {
+            100%{
+                opacity: 0;
             }
         }
     }

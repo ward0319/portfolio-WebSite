@@ -2,10 +2,11 @@ import React,{useState}from 'react'
 import {FaArrowAltCircleRight,FaArrowAltCircleLeft} from "react-icons/fa"
 import {SliderData} from "./SliderData";
 import "./Slider.scss"
+import { useEffect } from 'react';
 
 const SliderPj = ({slides}) => {  
   const [current,setCurrent] = useState(0)
-  const [content,setContent] = useState("") 
+  const [id, setId] = useState(null)
   const lengths = slides.length
 
   const nextButton = () => {
@@ -29,11 +30,14 @@ const SliderPj = ({slides}) => {
     }
   }
   const descAdd = (id) => {
-    
+    setId(id)
   }
   const removeMouse = () => {
-    setContent("")
+    setId(null)
   }
+  useEffect(()=>{
+
+  },[])
   return (
     <section className="gallery">
       <FaArrowAltCircleLeft className="left-arrow" onClick={prevButton}></FaArrowAltCircleLeft>
@@ -42,7 +46,16 @@ const SliderPj = ({slides}) => {
         return(
           <div className={index === current ? "slide active" : "slide"} key={index} onMouseEnter={()=>descAdd(index)} onMouseLeave={()=>removeMouse()}>
             {index === current && (
-              <img src={process.env.PUBLIC_URL+slide.image} alt = 'image' className="images" onClick={()=>clickLink(index)}></img>
+              <div>
+                <img src={process.env.PUBLIC_URL+slide.image} alt = "image" className="images" onClick={()=>clickLink(index)}></img>
+                <div className={id === null ? "none" : "desc"}>
+                  {id === null ? null : 
+                    <div className="desc-container">
+                      <span>간달ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</span>
+                      <button>버튼</button>
+                    </div>}
+                </div>
+              </div>
             )}
           </div>
         )}

@@ -13,7 +13,7 @@ export default function Intro() {
         <h2 className='smallTitle'>FrontEnd Developer</h2>
         <h3 className='description'>I'm building Interactive Web and development producing quality work</h3>
       </div>
-      <a href='#about'>
+      <a href='#about' className='bottom-btn'>
         <img src={exapndLogo} alt="logo stuff"></img>
       </a>
     </div>

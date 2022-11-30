@@ -2,14 +2,20 @@ import React, { useState } from "react";
 import './navbar.scss';
 import Logo from "../../assets/H&H-logo.png"
 import { FaGithub , FaVimeo, FaGoogle } from 'react-icons/fa';
+import Swal from 'sweetalert2'
 
 function Navbar({menuOpens,setMenuOpens}){
+    const Swal = require('sweetalert2')
     const onClick = () => {
         setMenuOpens(!menuOpens);
     }
     const clipBoard = () => {
         navigator.clipboard.writeText("sddsk1123@gmail.com")
-        alert("Mail address Clipboard !")
+        Swal.fire({
+            background: "#dff9fb",
+            title:"Mail address Clipboard !",
+            color:"black",
+        })
     }
     return(
         <>

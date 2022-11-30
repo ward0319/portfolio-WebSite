@@ -1,12 +1,12 @@
 import React from 'react'
 import "./About.scss"
-import profile from "../../assets/profile.jpg"
 import { BsDownload } from "react-icons/bs";
 import { IoPersonSharp } from "react-icons/io5";
 import { FaCheck } from "react-icons/fa";
 import { BiMagnet } from "react-icons/bi";
 import { FaBirthdayCake ,FaPhoneAlt} from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
+import exapndLogo from "../../assets/down.png";
 
 export default function About() {
   return (
@@ -64,6 +64,9 @@ export default function About() {
           <p className='right-mg'><FaCheck></FaCheck> 협업하기 좋은 소통능력을 갖고 있습니다 !</p>
         </div>
       </div>
+      <a href='#skills' className='bottom-btn2'>
+        <img src={exapndLogo} alt="logo stuff"></img>
+      </a>
     </div>
   )
 }

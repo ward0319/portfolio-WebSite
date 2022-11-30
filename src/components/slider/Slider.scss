@@ -35,23 +35,36 @@
         transition-duration: 1s;
         transform: scale(1.08);
     }
-    .desc{
-        opacity: 0.85;
-        background-color: gray;
-        height: 554px;
-        width: 780px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 20;
-    }
+    
     
     .images{
         height: 550px;
         width: 780px;
         border-radius: 10px;
         cursor: pointer;
+    }
+    .desc{
+        height: 554px;
+        width: 780px;
+        opacity: 0.65;
+        background-color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 20;
+        transition:all 0.5s;
+    }
+    .none{
+        transform: scaleY(1);
+    }
+    .desc-container{
+        span{
+            color:white;
+        }
+        button{
+            
+        }
     }
 }
 

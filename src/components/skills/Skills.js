@@ -1,10 +1,10 @@
 import "./Skills.scss";
-import { AiOutlinePaperClip } from "react-icons/ai";
 import awsIcon from  "../../assets/aws.png"
 import sassIcon from  "../../assets/sass.png"
 import { useState } from "react";
 import Modal from "../modal/Modal";
 import { TbSword } from "react-icons/tb";
+import exapndLogo from "../../assets/down.png";
 
 export default function Skills() {
   const [id,setId] = useState()
@@ -58,9 +58,11 @@ export default function Skills() {
         <div className={"skills-back" + (hover === 7 ? " hover" : "")} onMouseEnter={()=>hoverEvent(7)} onMouseLeave={()=>unHoverEvent()}>
           <img src={sassIcon} className="skills-icons" onClick={()=>openModal(6)}></img>
         </div>
-        
       </div>
       <Modal id={id} check={check} setCheck={setCheck}></Modal>
+      <a href='#portfolio' className='bottom-btn3'>
+        <img src={exapndLogo} alt="logo stuff"></img>
+      </a>
     </div>
   )
 }
