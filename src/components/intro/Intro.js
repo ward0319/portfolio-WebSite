@@ -9,9 +9,9 @@ export default function Intro() {
         <img src={icon} alt="my"></img>
       </div>
       <div className='right'>
-        <h1 className='bigTitle'>Hi, I'am Hyunwung</h1>
-        <h2 className='smallTitle'>FrontEnd Developer</h2>
-        <h3 className='description'>I'm building Interactive Web and development producing quality work</h3>
+        <h1 className='bigTitle'><span>Hi, I'am Hyunwung</span></h1>
+        <h2 className='smallTitle'><span>FrontEnd Developer</span></h2>
+        <h3 className='description'><span>I'm building Interactive Web and development producing quality work</span></h3>
       </div>
       <a href='#about' className='bottom-btn'>
         <img src={exapndLogo} alt="logo stuff"></img>

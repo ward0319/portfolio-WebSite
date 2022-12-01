@@ -16,7 +16,9 @@
         overflow: hidden;
         justify-content: right;
         img{
-            height: 62%;
+            // border-radius: 50%;
+            margin-right: 20px;
+            height: 55%;
             background-size: cover;
             @include mobile {
                 margin-top: 30px;
@@ -33,27 +35,74 @@
         align-items: flex-start;
         justify-content: center;
         position: relative;
-        @include mobile {
-            justify-content:center;
-        }
-        h1{
+        .bigTitle{
             font-size: 60px;
-            @include mobile {
-                font-size: 40px;
-                margin: 2px 0;
+            span{
+                position: relative;
+            }
+            span::after{
+                content:"";
+                position: absolute;            
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: white;
+                border-left: 2px solid black;
+                animation: typing 2.7s steps(19) 1;
+                animation-fill-mode: forwards;
+            }
+            @keyframes typing {
+                100%{
+                    left:100%;
+                    margin: 0 -35px 0 35px;
+                }
             }
         }
-        h2{
+        .smallTitle{
             font-size: 35px;
-            @include mobile {
-                font-size: 23px;
+            span{
+                position: relative;
+            }
+            span::after{
+                content:"";
+                position: absolute;            
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: white;
+                border-left: 2px solid black;
+                animation: typing 3s steps(24) 1;
+                animation-fill-mode: forwards;
+            }
+            @keyframes typing {
+                100%{
+                    left:100%;
+                    margin: 0 -35px 0 35px;
+                }
             }
         }
         .description{
             font-size: 20px;
             margin-top: 1px;
-            @include mobile {
-                font-size: 15px;
+        }
+        span{
+            position: relative;
+        }
+        span::after{
+            content:"";
+            position: absolute;            
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: white;
+            border-left: 2px solid black;
+            animation: typing 3.5s steps(50) 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes typing {
+            100%{
+                left:100%;
+                margin: 0 -35px 0 35px;
             }
         }
     }
@@ -64,11 +113,6 @@
         img{
             width: 30px;
             animation: arrowBlink 2s infinite;
-        }
-        @keyframes arrowBlink {
-            100%{
-                opacity: 0;
-            }
         }
     }
     

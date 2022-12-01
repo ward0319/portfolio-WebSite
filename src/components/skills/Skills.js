@@ -59,7 +59,7 @@ export default function Skills() {
           <img src={sassIcon} className="skills-icons" onClick={()=>openModal(6)}></img>
         </div>
       </div>
-      <Modal id={id} check={check} setCheck={setCheck}></Modal>
+      <Modal id={id} check={check} setCheck={setCheck} iconData={iconData}></Modal>
       <a href='#portfolio' className='bottom-btn3'>
         <img src={exapndLogo} alt="logo stuff"></img>
       </a>

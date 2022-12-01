@@ -59,11 +59,30 @@
         transform: scaleY(1);
     }
     .desc-container{
-        span{
-            color:white;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+        h3{
+            font-size: 54px;
+            margin: 25px auto;
+            color:#ecf0f1;
+        }
+        p{
+            margin: 0 auto;
+            font-size: 18px;
+            color: #ecf0f1;
         }
         button{
-            
+            display: block;
+            margin: 30px auto;
+            background-color: #ecf0f1;
+            border: none;
+            border-radius: 20px;
+            height: 40px;
+            width: 120px;
+            font-size: 22px;
+            cursor: pointer;
         }
     }
 }

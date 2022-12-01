@@ -1,6 +1,5 @@
 import "./portfolio.scss"
 import SliderPj from "../slider/SliderPj";
-import { AiOutlinePaperClip } from "react-icons/ai";
 import { SliderData } from "../slider/SliderData";
 import { ImFilePicture } from "react-icons/im";
 import exapndLogo from "../../assets/up.png";
