@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio-WebSite/static/css/main.fb540340.css",
-    "main.js": "/portfolio-WebSite/static/js/main.5d3f44f2.js",
+    "main.css": "/portfolio-WebSite/static/css/main.4319d23e.css",
+    "main.js": "/portfolio-WebSite/static/js/main.d57903c0.js",
     "static/media/icon.jpg": "/portfolio-WebSite/static/media/icon.9bde2fae96b6af5f5df3.jpg",
     "static/media/H&H-logo.png": "/portfolio-WebSite/static/media/H&H-logo.37a4cad3613b37c9bc96.png",
-    "static/media/shake.svg": "/portfolio-WebSite/static/media/shake.c7165a1f59e2367bf4395199384f606f.svg",
+    "static/media/aws.png": "/portfolio-WebSite/static/media/aws.95bdee6b9922c9b94fd5.png",
+    "static/media/sass.png": "/portfolio-WebSite/static/media/sass.eae2b96dc5f29556b225.png",
     "index.html": "/portfolio-WebSite/index.html",
-    "main.fb540340.css.map": "/portfolio-WebSite/static/css/main.fb540340.css.map",
-    "main.5d3f44f2.js.map": "/portfolio-WebSite/static/js/main.5d3f44f2.js.map"
+    "main.4319d23e.css.map": "/portfolio-WebSite/static/css/main.4319d23e.css.map",
+    "main.d57903c0.js.map": "/portfolio-WebSite/static/js/main.d57903c0.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb540340.css",
-    "static/js/main.5d3f44f2.js"
+    "static/css/main.4319d23e.css",
+    "static/js/main.d57903c0.js"
   ]
 }
