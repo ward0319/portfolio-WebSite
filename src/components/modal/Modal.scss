@@ -13,7 +13,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 500px;
-    height: 600px;
+    height: 500px;
     border-radius: 25px;
     background-color: #95afc0;
     z-index: 100;
@@ -27,7 +27,8 @@
     .modal-content{
         padding: 5px 20px 5px 20px;
         .modal-contents{
-            font-size: 26px;
+            margin-bottom: 10px;
+            font-size: 18px;
             color: #dff9fb;
             font-weight: bold;
         }

@@ -69,7 +69,6 @@ const SliderPj = ({slides}) => {
       ])
     }
   },[id])
-  console.log(content2)
   return (
     <section className="gallery">
       <FaArrowAltCircleLeft className="left-arrow" onClick={prevButton}></FaArrowAltCircleLeft>
