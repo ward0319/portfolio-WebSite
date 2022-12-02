@@ -4,7 +4,7 @@ import "./Modal.scss"
 
 const Modal = ({id , check ,setCheck , iconData}) => {
     const [title,setTitle] = useState()
-    const [content,setContent] = useState("")
+    const [content,setContent] = useState([])
     const handleModal = () => {
         setCheck((prev)=>!prev)
     }
@@ -20,7 +20,7 @@ const Modal = ({id , check ,setCheck , iconData}) => {
         }
         else if(id===2){
             setTitle("JavaScript")
-            setContent("자바스크립트의 전반적인 이해도를 갖고 있으며, 웹 브라우저에 인터프리터가 내장되어 있음을 알고 있습니다. 또한 JSON과 Object를 이용한 데이터 활용에 어색함이 전혀 없으며 비동기적 언어라는 것을 인지하고 있습니다.")
+            setContent([{id:0,name:""}])
         }
         else if(id===3){
             setTitle("React")
