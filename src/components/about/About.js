@@ -54,7 +54,7 @@ export default function About() {
               </div>
             </div>
           </div>
-          <a className='download-link' href='aws.png' download="aws.png">
+          <a className='download-link' href='서현웅-이력서 - Google Docs.pdf' download="서현웅-이력서 - Google Docs.pdf">
             <button className='download-btn'>Resume <BsDownload></BsDownload></button>
           </a>
         </div>
