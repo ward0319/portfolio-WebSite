@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio-WebSite/static/css/main.9702722d.css",
-    "main.js": "/portfolio-WebSite/static/js/main.c0001090.js",
+    "main.js": "/portfolio-WebSite/static/js/main.1ddc04ab.js",
     "static/media/icon.jpg": "/portfolio-WebSite/static/media/icon.9bde2fae96b6af5f5df3.jpg",
     "static/media/H&H-logo.png": "/portfolio-WebSite/static/media/H&H-logo.37a4cad3613b37c9bc96.png",
     "static/media/aws.png": "/portfolio-WebSite/static/media/aws.95bdee6b9922c9b94fd5.png",
     "static/media/sass.png": "/portfolio-WebSite/static/media/sass.eae2b96dc5f29556b225.png",
     "index.html": "/portfolio-WebSite/index.html",
     "main.9702722d.css.map": "/portfolio-WebSite/static/css/main.9702722d.css.map",
-    "main.c0001090.js.map": "/portfolio-WebSite/static/js/main.c0001090.js.map"
+    "main.1ddc04ab.js.map": "/portfolio-WebSite/static/js/main.1ddc04ab.js.map"
   },
   "entrypoints": [
     "static/css/main.9702722d.css",
-    "static/js/main.c0001090.js"
+    "static/js/main.1ddc04ab.js"
   ]
 }
