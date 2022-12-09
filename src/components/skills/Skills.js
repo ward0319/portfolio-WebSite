@@ -53,10 +53,7 @@ export default function Skills() {
       </div>
       <div className="skills-container2">
         <div className={"skills-back" + (hover === 6 ? " hover" : "")} onMouseEnter={()=>hoverEvent(6)} onMouseLeave={()=>unHoverEvent()}>
-          <img src={awsIcon} className="skills-icons" onClick={()=>openModal(5)}></img>
-        </div>
-        <div className={"skills-back" + (hover === 7 ? " hover" : "")} onMouseEnter={()=>hoverEvent(7)} onMouseLeave={()=>unHoverEvent()}>
-          <img src={sassIcon} className="skills-icons" onClick={()=>openModal(6)}></img>
+          <img src={sassIcon} className="skills-icons" onClick={()=>openModal(5)}></img>
         </div>
       </div>
       <Modal id={id} check={check} setCheck={setCheck} iconData={iconData}></Modal>
