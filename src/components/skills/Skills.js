@@ -1,5 +1,5 @@
 import "./Skills.scss";
-import awsIcon from  "../../assets/aws.png"
+import jquery from  "../../assets/jquery.png"
 import sassIcon from  "../../assets/sass.png"
 import { useState } from "react";
 import Modal from "../modal/Modal";
@@ -53,7 +53,10 @@ export default function Skills() {
       </div>
       <div className="skills-container2">
         <div className={"skills-back" + (hover === 6 ? " hover" : "")} onMouseEnter={()=>hoverEvent(6)} onMouseLeave={()=>unHoverEvent()}>
-          <img src={sassIcon} className="skills-icons" onClick={()=>openModal(5)}></img>
+          <img src={sassIcon} className="skills-icons" onClick={()=>openModal(6)}></img>
+        </div>
+        <div className={"skills-back" + (hover === 7 ? " hover" : "")} onMouseEnter={()=>hoverEvent(7)} onMouseLeave={()=>unHoverEvent()}>
+          <img src={jquery} className="skills-icons" onClick={()=>openModal(7)}></img>
         </div>
       </div>
       <Modal id={id} check={check} setCheck={setCheck} iconData={iconData}></Modal>
