@@ -1,61 +1,50 @@
+@import "../../global.scss";
+
 .skills{
+    width: 100%;
     background-color: lightcoral;
     display: flex;
     flex-direction: column;
     position: relative;
     .skills-title{
+        min-height: 80px;
         margin: 70px auto;
         font-size: 60px;
     }
-    .skills-container{
-        margin: 0 auto;
-        display: flex;
-        .skills-back{
-            margin-left: 70px;
-            border-radius: 20px;
-            width: 200px;
-            height: 200px;
-            cursor: pointer;
-            background-color: aliceblue;
-            .skills-icons{
-                display: block;
-                margin: 10px auto;
-                height: 180px;
+    .skills-wrap{
+        height: 100%;
+        .skills-container{
+            scrollbar-width: none;
+            display: flex;
+            flex-wrap: wrap;
+            padding:0 60px 20px 60px;
+            justify-content: center;
+            gap: 40px;
+            .skills-back{
+                border-radius: 20px;
+                width: 200px;
+                height: 200px;
+                cursor: pointer;
+                background-color: aliceblue;
+                .skills-icons{
+                    display: block;
+                    margin: 10px auto;
+                    height: 180px;
+                }
             }
-        }
-        .hover{
-            width: 240px;
-            height: 240px;
-            .skills-icons{
-                height: 210px;
-            }
-        }
-    }
-    .skills-container2{
-        margin: 70px auto;
-        display: flex;
-        .skills-back{
-            margin-left: 60px;
-            border-radius: 20px;
-            width: 200px;
-            height: 200px;
-            cursor: pointer;
-            background-color: aliceblue;
-            .skills-icons{
-                display: block;
-                margin: 10px auto;
-                height: 180px;
-                // object-fit: cover;
-            }
-        }
-        .hover{
-            width: 240px;
-            height: 240px;
-            .skills-icons{
-                height: 210px;
+            .hover{
+                width: 240px;
+                height: 240px;
+                .skills-icons{
+                    height: 210px;
+                }
             }
         }
     }
+    .skills-wrap::-webkit-scrollbar {
+        display: none;
+    }
+    
     .bottom-btn3{
         position: absolute;
         left: 49%;
@@ -68,6 +57,26 @@
             100%{
                 opacity: 0;
             }
+        }
+    }
+}
+
+@include tab{
+    .skills{
+        .skills-title{
+            overflow: hidden;
+            margin: 40px auto;
+            font-size: 50px;
+        }
+    }
+}
+
+@include mobile{
+    .skills{
+        .skills-title{
+            overflow: hidden;
+            margin: 30px auto;
+            font-size: 40px;
         }
     }
 }

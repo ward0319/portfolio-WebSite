@@ -16,7 +16,7 @@ const App = () => {
       <Menu menuOpens={menuOpens} setMenuOpens={setMenuOpens}></Menu>
       <div className="sections">
         <Intro></Intro>
-        <About></About>
+        {/* <About></About> */}
         <Skills></Skills>
         <Portfolio></Portfolio>
       </div>

@@ -37,6 +37,7 @@
         position: relative;
         .bigTitle{
             font-size: 60px;
+            overflow: hidden;
             span{
                 position: relative;
             }
@@ -59,6 +60,7 @@
             }
         }
         .smallTitle{
+            overflow: hidden;
             font-size: 35px;
             span{
                 position: relative;
@@ -82,6 +84,7 @@
             }
         }
         .description{
+            overflow: hidden;
             font-size: 20px;
             margin-top: 1px;
         }
@@ -116,4 +119,24 @@
         }
     }
     
+}
+
+
+
+
+@media (max-width: 768px) {
+    .intro{
+        .right{
+            justify-content: flex-start;
+            .bigTitle{
+                font-size: 50px;
+            }
+            .smallTitle{
+                font-size: 28px;
+            }
+            .description{
+                font-size: 24px;
+            }
+        }
+    }
 }

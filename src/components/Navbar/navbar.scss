@@ -107,3 +107,13 @@
         }
     }
 }
+
+@include tab{
+    
+}
+
+@include mobile{
+    .wrap{
+        display: none;
+    }
+}

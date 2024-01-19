@@ -77,7 +77,7 @@ const SliderPj = ({slides}) => {
         return(
           <div className={index === current ? "slide active" : "slide"} key={index} onMouseEnter={()=>descAdd(index)} onMouseLeave={()=>removeMouse()}>
             {index === current && (
-              <div>
+              <div className='slide_container'>
                 <img src={process.env.PUBLIC_URL+slide.image} alt = "image" className="images"></img>
                 <div className={id === null ? "none" : "desc"}>
                   {id === null ? null : 
