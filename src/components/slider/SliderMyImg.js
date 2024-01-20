@@ -1,0 +1,26 @@
+export const sliderMyImg =[
+    {
+        image:"/images/life/2.jpg"
+    },
+    {
+        image:"/images/life/3.jpg"
+    },
+    {
+        image:"/images/life/4.jpg"
+    },
+    {
+        image:"/images/life/5.jpg"
+    },
+    {
+        image:"/images/life/6.jpg"
+    },
+    {
+        image:"/images/life/7.jpg"
+    },
+    {
+        image:"/images/life/8.jpg"
+    },
+    {
+        image:"/images/life/9.jpg"
+    }
+]

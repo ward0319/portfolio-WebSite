@@ -42,7 +42,6 @@ export default function Skills() {
   {
     icons:"/icons/jquery.png"
   }]
-  console.log(id)
   return (
     <div className='skills' id="skills">
       <div className="skills-title">

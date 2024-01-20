@@ -12,8 +12,8 @@ function Navbar({menuOpens,setMenuOpens}){
     const clipBoard = () => {
         navigator.clipboard.writeText("sddsk1123@gmail.com")
         Swal.fire({
-            background: "#dff9fb",
-            title:"Mail address Clipboard !",
+            background: "#fff",
+            title:"메일 주소가 복사되었어요 !",
             color:"black",
         })
     }
@@ -35,7 +35,7 @@ function Navbar({menuOpens,setMenuOpens}){
             </div>
             <div className="leftbar">
                 <div className="wrap">
-                    <a target="_blank" rel="noreferrer" href="https://github.com/hyunwung" className='logos'>{<FaGithub></FaGithub>}</a>
+                    <a target="_blank" rel="noreferrer" href="https://github.com/ward0319" className='logos'>{<FaGithub></FaGithub>}</a>
                     <a target="_blank" rel="noreferrer" href="https://velog.io/@sddsk" className='logos'>{<FaVimeo></FaVimeo>}</a>
                     <a rel="noreferrer" onClick={()=>clipBoard()} className='logos'>{<FaGoogle></FaGoogle>}</a>
                 </div>

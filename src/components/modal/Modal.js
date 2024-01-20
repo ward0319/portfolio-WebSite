@@ -40,31 +40,31 @@ const Modal = ({id , check ,setCheck , iconData}) => {
                 {id:0,name:"Python의 데이터 구조를 이해하고 있음"},
                 {id:1,name:"특정 기능을 구현하는데 필요한 라이브러리를 생각하여 활용 가능"}])
         }
-        else if(id===6){
+        else if(id===5){
             setTitle("SASS")
             setContent([{id:0,name:"CSS 라이브러리 중 제일 선호함"},{id:1,name:"전역변수를 활용하여 CSS 속성값 관리를 선호"},{id:2,name:"반응형 웹 구현 경험이 가능"}])
         }
-        else if(id===7){
+        else if(id===6){
             setTitle("Jquery")
             setContent([{id:0,name:"jquery함수를 적재적소에 맞게 사용 가능"},{id:1,name:"기획이 오래된 프로젝트에서 유지보수 경험 있음"}])
         }
     },[id])
     return (
       <div>
-        {check ?
-        <div>
-            <div className='modal-container'>
-                <h3 className='modal-title'>{title}</h3>
-                <div className='modal-content'>
-                    {content.map((data,index)=>{
-                        return(
-                            <p key={index} className='modal-contents'><BsDot></BsDot>{data.name}</p>
-                        )
-                    })}
+        {check &&
+            <div>
+                <div className='modal-container'>
+                    <h3 className='modal-title'>{title}</h3>
+                    <div className='modal-content'>
+                        {content.map((data,index)=>{
+                            return(
+                                <p key={index} className='modal-contents'><BsDot></BsDot>{data.name}</p>
+                            )
+                        })}
+                    </div>
                 </div>
-            </div>
-            <div className={"modal"} onClick={handleModal}></div>
-        </div> : null} 
+                <div className="modal" onClick={handleModal}></div>
+            </div>} 
       </div>
   )
 }
